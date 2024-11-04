@@ -1,0 +1,10 @@
+
+.primary-btn {
+   background-color: var(--primary-500);
+   color: var(--light-100);
+
+   transition: all .2s ease;
+}
+.primary-btn:hover {
+   background-color: var(--primary-600);
+}
