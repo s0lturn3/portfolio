@@ -5,7 +5,9 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.scss'
+  styles: `
+    @import "../../styles/buttons.scss";
+  `
 })
 export class NavbarComponent {
 

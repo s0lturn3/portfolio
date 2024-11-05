@@ -10,10 +10,10 @@
 // #region PALETA DE CORES ----- *\
 :root {
    // Botões principais e links
-   --primary-700: #6F092B;  // Cor escura para estados ativos ou hover em botões principais
+   --primary-300: #ff3a89;  // Tom mais claro, ideal para hover suave ou efeitos em temas escuros
    --primary-500: #FF1463;  // Cor principal, usada para botões e links principais
    --primary-600: #cb0446;
-   --primary-300: #ff3a89;  // Tom mais claro, ideal para hover suave ou efeitos em temas escuros
+   --primary-700: #6F092B;  // Cor escura para estados ativos ou hover em botões principais
  
    // Ações secundárias
    --secondary-500: #620DC4;  // Cor para botões e ações secundárias, criando contraste com a cor primária
@@ -27,6 +27,7 @@
  
    // Fundos
    --dark-900: #161416;     // Cor de fundo para temas escuros
+   --dark-300: #201d20;
    --light-100: #FCFAF9;    // Cor de fundo para temas claros, facilita a leitura e o contraste
  } 
 // #endregion PALETA DE CORES ----- */
@@ -34,12 +35,8 @@
 
 // #region DEFINIÇÕES GLOBAIS ----- *\
 * {
-   background-color: var(--dark-900);
+   // background-color: var(--dark-900);
    color: var(--light-100);
-
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
 }
 
 app-root, .app-wrapper {
@@ -48,6 +45,7 @@ app-root, .app-wrapper {
 }
 
 html, body {
+   background-color: var(--dark-900) !important;
    font-family: "Comfortaa", serif !important;
 
    max-width: 100vw;
@@ -59,6 +57,11 @@ ul { list-style-type: none; }
 a {
    text-decoration: none !important;
    color: currentColor !important;
+
+   transition: all .2s ease;
+}
+a:hover {
+   font-weight: bold;
 }
 
 // #endregion DEFINIÇÕES GLOBAIS ----- */

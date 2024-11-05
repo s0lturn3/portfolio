@@ -1,4 +1,12 @@
 
-.vertical-align-middle {
-   vertical-align: middle;
-}
+.vertical-align-middle { vertical-align: middle; }
+
+.primary-text-300 { color: var(--primary-300) !important; }
+.primary-text-500 { color: var(--primary-500) !important; }
+.primary-text-600 { color: var(--primary-600) !important; }
+.primary-text-700 { color: var(--primary-700) !important; }
+
+.secondary-text-500 { color: var(--secondary-500) !important; }
+.secondary-text-700 { color: var(--secondary-700) !important; }
+
+

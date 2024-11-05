@@ -1,11 +1,17 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'footer',
+  selector: 'navigation-footer',
   standalone: true,
   imports: [],
   templateUrl: './footer.component.html',
-  styleUrl: './footer.component.scss'
+  styles: `
+    @import "../../styles/global.scss";
+
+    .footer {
+      background-color: #201d20 !important;
+    }
+  `
 })
 export class FooterComponent {
 
