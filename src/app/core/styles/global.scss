@@ -1,4 +1,27 @@
 
-.vertical-align-middle {
-   vertical-align: middle;
-}
+// #region TEXTOS
+.primary-text-300 { color: var(--primary-300) !important; }
+.primary-text-500 { color: var(--primary-500) !important; }
+.primary-text-600 { color: var(--primary-600) !important; }
+.primary-text-700 { color: var(--primary-700) !important; }
+
+.secondary-text-500 { color: var(--secondary-500) !important; }
+.secondary-text-700 { color: var(--secondary-700) !important; }
+// #endregion TEXTOS
+
+
+// #region FUNDOS
+.background-primary-300 { background-color: var(--primary-300) !important; }
+.background-primary-500 { background-color: var(--primary-500) !important; }
+.background-primary-600 { background-color: var(--primary-600) !important; }
+.background-primary-700 { background-color: var(--primary-700) !important; }
+
+.background-secondary-500 { color: var(--secondary-500) !important; }
+.background-secondary-700 { color: var(--secondary-700) !important; }
+// #endregion FUNDOS
+
+
+// #region UTILS
+.vertical-align-middle { vertical-align: middle; }
+
+// #endregion UTILS
