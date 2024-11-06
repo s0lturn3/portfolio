@@ -7,9 +7,16 @@ import { Component } from '@angular/core';
   templateUrl: './footer.component.html',
   styles: `
     @import "../../styles/global.scss";
+    @import "../../styles/buttons.scss";
 
     .footer {
-      background-color: #201d20 !important;
+
+      .content {
+        background-color: #201d20 !important;
+      }
+      .credits {
+        background-color: var(--primary-500) !important;
+      }
     }
   `
 })
