@@ -17,6 +17,7 @@ import { LanguageService } from '../../services/language.service';
     @import "../../styles/global.scss";
     @import "../../styles/buttons.scss";
     @import "../../styles/animations.scss";
+    @import "../../styles/media-queries.scss";
 
   `
 })
