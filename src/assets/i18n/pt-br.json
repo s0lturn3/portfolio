@@ -1,0 +1,26 @@
+{
+   "home": "Início",
+   "skills": "Habilidades",
+   "about": "Sobre mim",
+   "services": "Serviços",
+   "contact": "CONTATE-ME",
+
+   "home-greeting": "Bem vindo",
+   "home-title": "Pode me chamar de ",
+   "home-subtitle": "Desenvolvedor ",
+   
+   "about-title": "Sobre Mim",
+   "about-subtitle": "+3 ANOS DE EXPERIÊNCIA COM DESENVOLVIMENTO FULLSTACK",
+   "about-1-p": "Desenvolvedor com foco em Angular e .NET Framework, apaixonado por criar soluções eficientes e escaláveis.",
+   "about-2-p": "Possuo sólidas experiências em desenvolvimento de aplicações web com ênfase em microsserviços e interfaces interativas. Posso também citar o uso de testes, desenvolvimento e manutenção de bibliotecas npm e banco de dados.",
+
+   "services-title": "Serviços",
+   "services-subtitle": "O QUE POSSO FAZER POR VOCÊ",
+   "services-frontend-card": "Desenvolvo interfaces de usuário modernas e responsivas, com design no Figma e uso de tecnologias como Bootstrap e SCSS para garantir uma navegação intuitiva.",
+   "services-backend-card": "Crio soluções de backend seguras e eficientes em .NET Framework, com integração de bancos de dados e foco em desempenho e escalabilidade.",
+   "services-rest-card": "Desenvolvo e documento APIs RESTful seguras e escaláveis, além de realizar integrações com APIs de terceiros.",
+   "services-angular-card": "Ofereço desenvolvimento especializado em Angular, incluindo bibliotecas personalizadas, componentização de código e soluções modulares.",
+   "services-question": "Se interessou?",
+
+   "footer-copyright": "Todos os direitos reservados"
+}

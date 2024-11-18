@@ -4,18 +4,13 @@
    </div>
 
    <div class="col-6 px-0 d-flex flex-row align-items-center justify-content-evenly">
-      <a href="#inicio">Início</a>
-
-      <a href="#sobre-mim">Sobre mim</a>
-      
-      <a href="#experiencia">Experiência</a>
-      
-      <a href="#projetos">Projetos</a>
+      <a href="#inicio">{{ 'home' | translate }}</a>
+      <a href="#skills">{{ 'skills' | translate }}</a>
+      <a href="#sobre-mim">{{ 'about' | translate }}</a>
+      <a href="#servicos">{{ 'services' | translate }}</a>
    </div>
 
-   <div class="col-3 d-flex align-items-center justify-content-center">
-      <a href="#contato">
-         <button class="btn primary-btn-500">CONTATO</button>
-      </a>
+   <div class="col-3 d-flex flex-row align-items-center justify-content-center gap-3 language">
+      <button class="btn btn-outline-primary-500" (click)="changeLanguage()"> <fa-icon [icon]="faGlobe" /> </button>
    </div>
 </div>

@@ -1,0 +1,53 @@
+<div class="vh-100 p-4 d-flex flex-column justify-content-center gap-5">
+   <div class="text-center show-content-anim" style="--show-delay: 0;">
+      <h4 class="fw-bold text-primary-300"> {{ 'services-title' | translate }} </h4>
+      <h2 class="fw-light"> {{ 'services-subtitle' | translate }} </h2>
+   </div>
+   
+   <div class="text-center d-flex flex-row justify-content-center gap-5">
+      <div class="card bg-dark-300 show-content-anim" style="--show-delay: 1;">
+         <div class="card-image">
+            <fa-icon [icon]="faDisplay" size="4x"></fa-icon>
+         </div>
+         <div class="card-body">
+            <h4 class="card-title fw-bold mb-3 text-primary-300">FRONTEND</h4>
+            <p class="card-text"> {{ 'services-frontend-card' | translate }} </p>
+         </div>
+      </div>
+
+      <div class="card bg-dark-300 show-content-anim" style="--show-delay: 2;">
+         <div class="card-image">
+            <fa-icon [icon]="faCode" size="4x" />
+         </div>
+         <div class="card-body">
+            <h4 class="card-title fw-bold mb-3 text-primary-300">BACKEND</h4>
+            <p class="card-text"> {{ 'services-backend-card' | translate }} </p>
+         </div>
+      </div>
+
+      <div class="card bg-dark-300 show-content-anim" style="--show-delay: 3;">
+         <div class="card-image">
+            <fa-icon [icon]="faGlobe" size="4x" />
+         </div>
+         <div class="card-body">
+            <h4 class="card-title fw-bold mb-3 text-primary-300">REST APIs</h4>
+            <p class="card-text"> {{ 'services-rest-card' | translate }} </p>
+         </div>
+      </div>
+
+      <div class="card bg-dark-300 show-content-anim" style="--show-delay: 4;">
+         <div class="card-image">
+            <fa-icon [icon]="faAngular" size="4x" />
+         </div>
+         <div class="card-body">
+            <h4 class="card-title fw-bold mb-3 text-primary-300">ANGULAR</h4>
+            <p class="card-text"> {{ 'services-angular-card' | translate }} </p>
+         </div>
+      </div>
+   </div>
+
+   <div class="text-center show-content-anim" style="--show-delay: 6;">
+      <p class="fs-5"> {{ 'services-question' | translate }} </p>
+      <a type="button" class="btn btn-outline-primary-500 fs-5" href="mailto:erickcarvalho.contato20@gmail.com" target="_blank"> {{ 'contact' | translate }} &nbsp; <fa-icon [icon]="faEnvelope" /> </a>
+   </div>
+</div>

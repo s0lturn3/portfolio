@@ -1,11 +1,22 @@
-<div class="vh-100 p-4 d-flex flex-row align-items-center justify-content-center">
-   <div class="col text-center secondary-text-500">
-      <h2>SOBRE MIM</h2>
+<div class="vh-100 p-4 d-flex flex-row align-items-center justify-content-start show-content-anim" style="--show-delay: 1;">
+   <div class="col text-center">
+      <img src="../../../../assets/images/perfil-about.gif" height="500px" alt="gif-perfil">
    </div>
    
-   <div class="col text-center">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga molestiae odit sapiente ipsa quos pariatur at. Totam beatae id sequi quidem impedit expedita sapiente ea, corporis omnis, illum sit eaque at eos distinctio magni, temporibus fuga quae ipsam hic quia blanditiis ab? Deleniti et maiores vero quas amet doloremque voluptatum.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta labore consequatur a, nisi molestias laudantium voluptates! Est nostrum consequatur illo saepe voluptates, quo quos vel illum ut earum recusandae libero dolorum sint eum maiores adipisci quae optio, possimus, corporis magni quis impedit dolorem. Quisquam rerum fugiat, placeat minima deleniti suscipit.</p>
-      <p class="secondary-text-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus ratione quod ad ut adipisci fugit at ipsam nesciunt similique expedita!</p>
+   <div class="col text-start">
+      <div class="titles">
+         <h4 class="text-primary-300">{{ 'about-title' | translate }}</h4>
+         <h2 class="fw-bold mb-5">{{ 'about-subtitle' | translate }}</h2>
+      </div>
+
+      <div class="mb-3">
+         <p>{{ 'about-1-p' | translate }}</p>
+         <p>{{ 'about-2-p' | translate }}</p>
+      </div>
+
+      <a type="button" class="cv-btn btn btn-outline-primary-500 fs-5"
+         [download]="download.filename" [href]="download.url_ptBR" target="_blank" rel="noopener noreferrer">
+         CV &nbsp; <fa-icon [icon]="faArrowDown" />
+      </a>
    </div>
 </div>

@@ -1,0 +1,26 @@
+{
+   "home": "Home",
+   "skills": "Skills",
+   "about": "About Me",
+   "services": "Services",
+   "contact": "CONTACT ME",
+
+   "home-greeting": "Welcome",
+   "home-title": "You can call me ",
+   "home-subtitle": "Developer",
+
+   "about-title": "About Me",
+   "about-subtitle": "+3 YEARS OF EXPERIENCE IN FULLSTACK DEVELOPMENT",
+   "about-1-p": "Developer focused on Angular and .NET Framework, passionate about creating efficient and scalable solutions.",
+   "about-2-p": "I have solid experience in developing web applications with an emphasis on microservices and interactive interfaces. I can also mention the use of testing, development and maintenance of npm libraries, and databases.",
+
+   "services-title": "Services",
+   "services-subtitle": "WHAT I CAN DO FOR YOU",
+   "services-frontend-card": "I develop modern and responsive user interfaces, design in Figma, and use technologies like Bootstrap and SCSS to ensure intuitive navigation.",
+   "services-backend-card": "I create secure and efficient backend solutions in .NET Framework, with database integration and a focus on performance and scalability.",
+   "services-rest-card": "I develop and document secure and scalable RESTful APIs, as well as integrate third-party APIs.",
+   "services-angular-card": "I offer specialized Angular development, including custom libraries, code componentization, and modular solutions.",
+   "services-question": "Interested?",
+
+   "footer-copyright": "All rights reserved"
+}
