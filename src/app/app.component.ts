@@ -4,7 +4,7 @@ import { NavbarComponent } from "./core/components/navbar/navbar.component";
 import { InicioComponent } from "./core/views/inicio/inicio.component";
 import { SobreMimComponent } from "./core/views/sobre-mim/sobre-mim.component";
 import { FooterComponent } from "./core/components/footer/footer.component";
-import { Title } from '@angular/platform-browser';
+import { Meta, Title } from '@angular/platform-browser';
 import { SkillsBarComponent } from "./core/components/skills-bar/skills-bar.component";
 import { ServicosComponent } from "./core/views/servicos/servicos.component";
 import { LanguageService } from './core/services/language.service';
@@ -45,17 +45,22 @@ export class AppComponent implements OnInit {
 
   // #region ==========> INITIALIZATION <==========
   constructor(
+    private _meta: Meta,
     private _titleService: Title,
-    private _languageService: LanguageService,
     private _translateService: TranslateService
   ) {
-    this._translateService.setDefaultLang('en');
+    this._translateService.addLangs(['pt-br', 'en']);
+    this._translateService.setDefaultLang('pt-br');
+    this._translateService.use('pt-br');
+
     this._translateService.use(localStorage.getItem('lang') || "pt-br");
   }
 
   ngOnInit(): void {
+    this._meta.updateTag({ name: 'description', content: 'Desenvolvedor fullstack especializado em Angular e .NET Framework' });
+    this._meta.updateTag({ name: 'title', content: 'Solturne' });
+
     this.setTitle('Solturne');
-    this._languageService.currentLanguage = (localStorage.getItem('lang') as "pt-br" | "en") || "pt-br";
   }
   // #endregion ==========> INITIALIZATION <==========
 
