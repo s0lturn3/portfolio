@@ -21,10 +21,6 @@ export class NavbarComponent {
 
   // #region ==========> PROPERTIES <==========
 
-  // #region PRIVATE
-  // [...]
-  // #endregion PRIVATE
-
   // #region PUBLIC
   faLinkedIn = faLinkedin;
   faGithub = faGithub;

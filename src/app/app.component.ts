@@ -28,10 +28,6 @@ export class AppComponent implements OnInit {
 
   // #region ==========> PROPERTIES <==========
 
-  // #region PRIVATE
-  // [...]
-  // #endregion PRIVATE
-
   // #region PUBLIC
   @HostListener('document:visibilitychange', [])
   onVisibilityChange() {

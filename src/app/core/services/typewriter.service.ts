@@ -12,18 +12,6 @@ interface TypeParams {
 })
 export class TypewriterService {
 
-  // #region ==========> PROPERTIES <==========
-
-  // #region PRIVATE
-  // [...]
-  // #endregion PRIVATE
-
-  // #region PUBLIC
-  // [...]
-  // #endregion PUBLIC
-
-  // #endregion ==========> PROPERTIES <==========
-
 
   // #region ==========> INITIALIZATION <==========
   constructor() { }

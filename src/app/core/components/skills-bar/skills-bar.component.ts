@@ -55,10 +55,6 @@ export class SkillsBarComponent implements OnInit {
 
   // #region ==========> PROPERTIES <==========
 
-  // #region PRIVATE
-  // [...]
-  // #endregion PRIVATE
-
   // #region PUBLIC
   frontendList = [
     "HTML",
