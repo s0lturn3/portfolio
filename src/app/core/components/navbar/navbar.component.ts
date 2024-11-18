@@ -15,6 +15,9 @@ import { faGlobe } from '@fortawesome/free-solid-svg-icons';
   templateUrl: './navbar.component.html',
   styles: `
     @import "../../styles/buttons.scss";
+    @import "../../styles/media-queries.scss";
+
+
   `
 })
 export class NavbarComponent {

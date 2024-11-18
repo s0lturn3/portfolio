@@ -13,12 +13,12 @@ import { TranslatePipe } from '@ngx-translate/core';
     @import "../../styles/global.scss";
     @import "../../styles/buttons.scss";
     @import "../../styles/animations.scss";
+    @import "../../styles/media-queries.scss";
 
     .card {
       color: var(--light-100);
       transition: all .2s ease;
-      min-height: 300px;
-      width: 350px;
+      // width: 100%;
 
       &:hover { border: solid 1px var(--primary-300); }
 
