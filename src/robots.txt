@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://solturne.vercel.app/sitemap.xml
