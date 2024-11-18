@@ -1,7 +1,29 @@
-<div class="vh-100 p-4 d-flex flex-column align-items-start justify-content-center">
-   <h4>Precisa de um desenvolvedor?</h4>
+<div class="vh-100 p-4 d-flex flex-row align-items-start justify-content-center gap-5">
+   <div class="col h-100 d-flex align-items-center justify-content-end show-content-anim" style="--show-delay: 2;">
+      <img class="rounded-circle" height="500px" src="../../../../assets/images/perfil2.jpeg" alt="foto">
+   </div>
 
-   <!-- Animação de typing que escreverá "Erick", apaga e depois escreve "Solturne" -->
-   <h2>Pode me chamar de <span class="text-primary-500">Solturne</span></h2>
-   <p>Trabalho com desenvolvimento web em Angular e C#</p>
+   <div class="col h-100 d-flex flex-column align-items-start justify-content-center show-content-anim" style="--show-delay: 0;">
+      <div class="mb-4">
+         <p class="fs-3"> {{ 'home-greeting' | translate }} 👋 </p>
+         <h1> {{ 'home-title' | translate }} <span class="text-primary-500">{{ typedTitle$ | async }} </span></h1>
+         <h4>
+            {{ languageService.currentLanguage === 'pt-br' ? ('home-subtitle' | translate) : null }}
+            <span class="text-primary-500">{{ typedSubtitle$ | async }}</span>
+            {{ languageService.currentLanguage === 'en' ? ('home-subtitle' | translate) : null }}
+         </h4>
+      </div>
+
+      <div class="d-flex flex-row gap-3 show-content-anim" style="--show-delay: 5;">
+         <a type="button" class="btn btn-outline-primary-500" href="https://www.linkedin.com/in/erick-carvalho-40a7471ba/" target="_blank"> <fa-icon [icon]="faLinkedIn" size="2x" /> </a>
+         <a type="button" class="btn btn-outline-primary-500" href="https://github.com/S0lturn3" target="_blank"> <fa-icon [icon]="faGithub" size="2x" /> </a>
+         <a type="button" class="btn btn-outline-primary-500" href="https://www.upwork.com/freelancers/~01461935f19114c1bf" target="_blank"> <fa-icon [icon]="faUpwork" size="2x" /> </a>
+         
+         <a type="button" class="btn btn-outline-primary-500 d-flex align-items-center fs-5" href="mailto:erickcarvalho.contato20@gmail.com" target="_blank"> {{ 'contact' | translate }} &nbsp; <fa-icon [icon]="faEnvelope" /> </a>
+         <a type="button" class="btn btn-outline-primary-500 d-flex align-items-center fs-5"
+            [download]="download.filename" [href]="download.url_ptBR" target="_blank" rel="noopener noreferrer">
+            CV &nbsp; <fa-icon [icon]="faArrowDown" />
+         </a>
+      </div>
+   </div>
 </div>

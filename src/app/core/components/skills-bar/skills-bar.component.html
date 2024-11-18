@@ -1,0 +1,41 @@
+<div class="skills-bar w-100 py-5 d-flex flex-column align-items-center bg-dark-300">
+   <div class="scroll frontend" style="--time:15s">
+      <div>
+         @for (item of frontendList; track $index) {
+            <span>{{ item }}</span>
+         }
+      </div>
+
+      <div>
+         @for (item of frontendList; track $index) {
+            <span>{{ item }}</span>
+         }
+      </div>
+   </div>
+   <div class="scroll backend" style="--time:20s">
+      <div>
+         @for (item of backendList; track $index) {
+            <span>{{ item }}</span>
+         }
+      </div>
+
+      <div>
+         @for (item of backendList; track $index) {
+            <span>{{ item }}</span>
+         }
+      </div>
+   </div>
+   <div class="scroll tools" style="--time:18s">
+      <div>
+         @for (item of toolsList; track $index) {
+            <span>{{ item }}</span>
+         }
+      </div>
+
+      <div>
+         @for (item of toolsList; track $index) {
+            <span>{{ item }}</span>
+         }
+      </div>
+   </div>
+</div>

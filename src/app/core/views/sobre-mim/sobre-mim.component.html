@@ -1,12 +1,22 @@
-<div class="vh-100 p-4 d-flex flex-row align-items-center justify-content-center">
-   <div class="col text-center text-secondary-300">
-      <h2>SOBRE MIM</h2>
+<div class="vh-100 p-4 d-flex flex-row align-items-center justify-content-start show-content-anim" style="--show-delay: 1;">
+   <div class="col text-center">
+      <img src="../../../../assets/images/perfil-about.gif" height="500px" alt="gif-perfil">
    </div>
    
-   <div class="col text-center">
-      <p>Desenvolvedor Full Stack com foco em Angular e C#.NET, apaixonado por criar soluções eficientes e escaláveis.</p>
-      <p>Iniciei na área de tecnologia com o desenvolvimento de jogos em Unity, na época fiz alguns pequenos joguinhos como aprendizado e acabei me apaixonando pela linguagem C#. Pouco tempo depois, quando eu iniciei um curso técnico de desenvolvimento para web eu comecei a estagiar em uma empresa onde, logo nos primeiros 6 meses fui efetivado juntamente com o restante da minha equipe. Estou na mesma empresa até hoje!</p>
-      <p>Possuo sólidas experiências em desenvolvimento de aplicações web com ênfase em microsserviços e interfaces interativas. Posso também citar o uso de testes, desenvolvimento e manutenção de bibliotecas npm e banco de dados.</p>
-      <p class="text-secondary-300">Nas horas vagas, gosto de aprender sobre diversos assuntos, mas principalmente novas tecnologias relacionadas a IA e sou um grande fã de Sandman (Neil Gaiman)</p>
+   <div class="col text-start">
+      <div class="titles">
+         <h4 class="text-primary-300">{{ 'about-title' | translate }}</h4>
+         <h2 class="fw-bold mb-5">{{ 'about-subtitle' | translate }}</h2>
+      </div>
+
+      <div class="mb-3">
+         <p>{{ 'about-1-p' | translate }}</p>
+         <p>{{ 'about-2-p' | translate }}</p>
+      </div>
+
+      <a type="button" class="cv-btn btn btn-outline-primary-500 fs-5"
+         [download]="download.filename" [href]="download.url_ptBR" target="_blank" rel="noopener noreferrer">
+         CV &nbsp; <fa-icon [icon]="faArrowDown" />
+      </a>
    </div>
 </div>

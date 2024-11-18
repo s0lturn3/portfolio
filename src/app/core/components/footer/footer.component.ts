@@ -1,25 +1,16 @@
 import { Component } from '@angular/core';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'navigation-footer',
   standalone: true,
-  imports: [],
+  imports: [ TranslatePipe ],
   templateUrl: './footer.component.html',
   styles: `
     @import "../../styles/global.scss";
     @import "../../styles/buttons.scss";
-
-    .footer {
-
-      .content {
-        background-color: #201d20 !important;
-      }
-      .credits {
-        background-color: var(--primary-500) !important;
-      }
-    }
   `
 })
 export class FooterComponent {
-
+  
 }

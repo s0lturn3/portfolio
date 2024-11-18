@@ -1,0 +1,30 @@
+
+// Classe que aplica a animação de exibir conteúdo suavemente
+.show-content-anim {
+   visibility: hidden;
+   opacity: 0;
+   animation: show-content 1.5s linear forwards;
+   animation-delay: calc(.25s * var(--show-delay));
+}
+
+
+
+// Animação para exibir conteúdo suavemente (usada principalmente após um reload da página)
+@keyframes show-content {
+   100% {
+   visibility: visible;
+   opacity: 1;
+   }
+}
+
+
+// Animação de scroll horizontal infinito (utilizada no componente de skills)
+@keyframes first-scroll {
+   0% { transform: translateX(100%); }
+   100% { transform: translateX(-100%); }
+}
+
+@keyframes second-scroll {
+   0% { transform: translateX(0); }
+   100% { transform: translateX(-200%); }
+}
