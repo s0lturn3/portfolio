@@ -8,9 +8,17 @@
          <p class="fs-3 home-greet"> {{ 'home-greeting' | translate }} 👋 </p>
          <h1 class="home-title"> {{ 'home-title' | translate }} <span class="text-primary-500">{{ typedTitle$ | async }} </span></h1>
          <h4 class="home-subtitle">
-            {{ languageService.currentLanguage === 'pt-br' ? ('home-subtitle' | translate) : null }}
-            <span class="text-primary-500">{{ typedSubtitle$ | async }}</span>
-            {{ languageService.currentLanguage === 'en' ? ('home-subtitle' | translate) : null }}
+            @if (translateService.currentLang) {
+               @if (translateService.currentLang === 'pt-br') {
+                  {{ 'home-subtitle' | translate }} <span class="text-primary-500">{{ typedSubtitle$ | async }}</span>
+               }
+               @else {
+                  <span class="text-primary-500">{{ typedSubtitle$ | async }}</span> {{ 'home-subtitle' | translate }} 
+               }
+            }
+            @else {
+               {{ 'home-subtitle' | translate }} <span class="text-primary-500">{{ typedSubtitle$ | async }}</span>
+            }
          </h4>
       </div>
 
