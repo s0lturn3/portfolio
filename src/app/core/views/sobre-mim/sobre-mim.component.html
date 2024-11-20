@@ -14,8 +14,8 @@
          <p>{{ 'about-2-p' | translate }}</p>
       </div>
 
-      <a type="button" class="cv-btn btn btn-outline-primary-500 fs-5"
-         [download]="download.filename" [href]="download.url_ptBR" target="_blank" rel="noopener noreferrer">
+      <a type="button" class="cv-btn btn btn-outline-primary-500 fs-5" aria-label="cv-download"
+         [download]="download.filename" [href]="translateService.currentLang === 'pt-br' ? download.url_ptBR : download.url_ENG" target="_blank" rel="noopener noreferrer">
          CV &nbsp; <fa-icon [icon]="faArrowDown" />
       </a>
    </div>

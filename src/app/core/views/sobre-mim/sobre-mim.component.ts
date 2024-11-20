@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
-import { TranslatePipe } from '@ngx-translate/core';
+import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-sobre-mim',
@@ -20,11 +20,28 @@ import { TranslatePipe } from '@ngx-translate/core';
   `
 })
 export class SobreMimComponent {
+
+  // #region ==========> PROPERTIES <==========
+
+  // #region PUBLIC
   public faArrowDown = faArrowDown;
   
   public download = {
     url_ptBR: "../../../../assets/documents/cv.pdf",
-    url_ENG: "../../../../assets/documents/cv_eng.pdf.pdf",
+    url_ENG: "../../../../assets/documents/cv_eng.pdf",
     filename: "erick-cv.pdf"
   };
+  // #endregion PUBLIC
+
+  // #endregion ==========> PROPERTIES <==========
+
+
+  // #region ==========> INITIALIZATION <==========
+  constructor(
+    public translateService: TranslateService
+  ) { }
+
+  ngOnInit(): void { }
+  // #endregion ==========> INITIALIZATION <==========
+
 }

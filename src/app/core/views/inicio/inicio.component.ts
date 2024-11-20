@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
+import { AsyncPipe } from '@angular/common';
+
+import { map } from 'rxjs';
+import { TranslatePipe, TranslateService } from '@ngx-translate/core';
+
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faGithub, faLinkedin, faUpwork } from '@fortawesome/free-brands-svg-icons';
 import { faArrowDown, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+
 import { TypewriterService } from '../../services/typewriter.service';
-import { map } from 'rxjs';
-import { AsyncPipe } from '@angular/common';
-import { TranslatePipe } from '@ngx-translate/core';
-import { LanguageService } from '../../services/language.service';
 
 @Component({
   selector: 'app-inicio',
@@ -18,7 +20,6 @@ import { LanguageService } from '../../services/language.service';
     @import "../../styles/buttons.scss";
     @import "../../styles/animations.scss";
     @import "../../styles/media-queries.scss";
-
   `
 })
 export class InicioComponent {
@@ -26,8 +27,8 @@ export class InicioComponent {
   // #region ==========> PROPERTIES <==========
 
   // #region PRIVATE
-  private _titles: string[] = [ "Erick_", "Solturne_" ];
-  private _subtitles: string[] = [ "Angular_", "C#_", ".NET Framework_", "Fullstack_" ];
+  private _titles: string[] = [ "_Erick", "_Solturne" ];
+  private _subtitles: string[] = [ "_Angular", "_C#", "_.NET Framework", "_Fullstack" ];
   // #endregion PRIVATE
 
   // #region PUBLIC
@@ -45,12 +46,6 @@ export class InicioComponent {
   public faUpwork = faUpwork;
   public faEnvelope = faEnvelope;
   public faArrowDown = faArrowDown;
-
-  public download = {
-    url_ptBR: "../../../../assets/documents/cv.pdf",
-    url_ENG: "../../../../assets/documents/cv_eng.pdf.pdf",
-    filename: "erick-cv.pdf"
-  };
   // #endregion PUBLIC
 
   // #endregion ==========> PROPERTIES <==========
@@ -59,7 +54,7 @@ export class InicioComponent {
   // #region ==========> INITIALIZATION <==========
   constructor(
     private typewriterService: TypewriterService,
-    public languageService: LanguageService
+    public translateService: TranslateService
   ) { }
 
   ngOnInit(): void { }
