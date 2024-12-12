@@ -20,6 +20,19 @@ import { TypewriterService } from '../../services/typewriter.service';
     @import "../../styles/buttons.scss";
     @import "../../styles/animations.scss";
     @import "../../styles/media-queries.scss";
+
+    #inicio-perfil {
+      height: 18rem;
+      width: 18rem;
+    }
+
+    .first-btns {
+      a {
+        transition: all .2s ease;
+        &:hover { font-size: 1.05rem; }
+        &:active { border-color: var(--primary-300); }
+      }
+    }
   `
 })
 export class InicioComponent {

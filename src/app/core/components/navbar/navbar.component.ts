@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import { TranslatePipe, TranslateService } from '@ngx-translate/core';
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faGithub, faLinkedin, faUpwork } from '@fortawesome/free-brands-svg-icons';
@@ -9,7 +10,11 @@ import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'navigation-header',
   standalone: true,
-  imports: [ FontAwesomeModule, TranslatePipe ],
+  imports: [
+    FontAwesomeModule,
+    TranslatePipe,
+    TooltipModule
+  ],
   templateUrl: './navbar.component.html',
   styles: `
     @import "../../styles/buttons.scss";

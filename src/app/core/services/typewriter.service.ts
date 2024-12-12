@@ -21,9 +21,9 @@ export class TypewriterService {
   // #region ==========> UTILS <==========
   public typeEffect(word: string) {
     return concat(
-      this.type({ word, speed: 50 }),
+      this.type({ word, speed: 100 }),
       of('').pipe(delay(1200), ignoreElements()),
-      this.type({ word, speed: 30, backwards: true }),
+      this.type({ word, speed: 50, backwards: true }),
       of('').pipe(delay(300), ignoreElements())
     );
   }

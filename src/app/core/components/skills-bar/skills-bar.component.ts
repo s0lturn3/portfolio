@@ -15,7 +15,7 @@ import { Component, OnInit } from '@angular/core';
       .scroll {
         position: relative;
         display: flex;
-        width: 65%;
+        width: 90%;
         overflow: hidden;
         
         -webkit-mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent)

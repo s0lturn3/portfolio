@@ -1,6 +1,6 @@
 <div class="about-content mb-5 p-4 d-flex flex-row align-items-center justify-content-start show-content-anim" style="--show-delay: 1;">
    <div class="col text-center">
-      <img src="../../../../assets/images/perfil-about.gif" height="500px" alt="gif-perfil">
+      <img id="about-me-img" src="../../../../assets/images/perfil-about.gif" alt="gif-perfil">
    </div>
    
    <div class="col text-start">
@@ -16,7 +16,7 @@
 
       <a type="button" class="cv-btn btn btn-outline-primary-500 fs-5" aria-label="cv-download"
          [download]="download.filename" [href]="translateService.currentLang === 'pt-br' ? download.url_ptBR : download.url_ENG" target="_blank" rel="noopener noreferrer">
-         CV &nbsp; <fa-icon [icon]="faArrowDown" />
+         {{ 'curriculum-btn' | translate }} &nbsp; <fa-icon [icon]="faArrowDown" />
       </a>
    </div>
 </div>
