@@ -14,6 +14,12 @@ import { TranslatePipe, TranslateService } from '@ngx-translate/core';
     @import "../../styles/animations.scss";
     @import "../../styles/media-queries.scss";
 
+    #about-me-img {
+      height: 25rem;
+      width: 25rem;
+      border-radius: 50%;
+    }
+
     .cv-btn {
       width: fit-content;
     }
@@ -27,8 +33,8 @@ export class SobreMimComponent {
   public faArrowDown = faArrowDown;
   
   public download = {
-    url_ptBR: "../../../../assets/documents/cv.pdf",
-    url_ENG: "../../../../assets/documents/cv_eng.pdf",
+    url_ptBR: "/assets/documents/erick_cv.pdf",
+    url_ENG: "/assets/documents/erick_cv_ENG.pdf",
     filename: "erick-cv.pdf"
   };
   // #endregion PUBLIC

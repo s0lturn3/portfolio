@@ -3,7 +3,9 @@
    "skills": "Habilidades",
    "about": "Sobre mim",
    "services": "Serviços",
-   "contact": "CONTATE-ME",
+   "contact": "E-MAIL",
+
+   "switch-language": "Switch to ENGLISH",
 
    "home-greeting": "Bem vindo",
    "home-title": "Me chamo ",
@@ -13,6 +15,8 @@
    "about-subtitle": "+3 ANOS DE EXPERIÊNCIA COM DESENVOLVIMENTO FULLSTACK",
    "about-1-p": "Desenvolvedor com foco em Angular e .NET Framework, apaixonado por criar soluções eficientes e escaláveis.",
    "about-2-p": "Possuo sólidas experiências em desenvolvimento de aplicações web com ênfase em microsserviços e interfaces interativas. Posso também citar o uso de testes, desenvolvimento e manutenção de bibliotecas npm e banco de dados.",
+
+   "curriculum-btn": "CURRÍCULO",
 
    "services-title": "Serviços",
    "services-subtitle": "O QUE POSSO FAZER POR VOCÊ",

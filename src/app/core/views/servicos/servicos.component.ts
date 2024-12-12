@@ -18,7 +18,7 @@ import { TranslatePipe } from '@ngx-translate/core';
     .card {
       color: var(--light-100);
       transition: all .2s ease;
-      // width: 100%;
+      width: 25rem;
 
       &:hover { border: solid 1px var(--primary-300); }
 
