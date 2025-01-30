@@ -1,8 +1,10 @@
-let hostName: any = "https://solturne.vercel.app";
+let hostName: any = window.location.hostname.includes("localhost")
+  ? `http://${ window.location.hostname }`
+  : `https://${ window.location.hostname }`;
 
 export const environment = {
 	production: true,
 	hostName: hostName,
 
-	localhost: 'http://localhost:3000/api'
+	localhost: `${hostName}/api`
 };
