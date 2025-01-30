@@ -9,9 +9,5 @@
         { "key": "Access-Control-Allow-Headers", "value": "Content-Type, Authorization" }
       ]
     }
-  ],
-  "builds": [
-    { "src": "backend/src/*.js", "use": "@vercel/node" },
-    { "src": "dist/portfolio/**/*", "use": "@vercel/static" }
   ]
 }
