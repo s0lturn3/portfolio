@@ -92,7 +92,7 @@ export class ContatoComponent {
       this.setNecessidades();
       const record: ContatoFormModel = this.contactForm.getRawValue() as ContatoFormModel;
 
-      this._contatoService.sendEmail(record).subscribe({
+      this._contatoService.testGet().subscribe({
         next: response => {
           this.emailSent = true;
           

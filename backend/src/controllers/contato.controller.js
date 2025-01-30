@@ -19,7 +19,21 @@ const { ApiResponse } = require('../models/ApiResponse.model');
 // #region ENDPOINTS
 
 // #region GET
-// [...]
+router.get('/get', async (req, res) => {
+  const returnModel = req.returnModel;
+  
+  try {
+    returnModel.code = 200;
+    return res.status(200).json(returnModel);
+  }
+  catch (err) {
+    returnModel.error = true;
+    returnModel.errorMessage = `Ocorreu um erro ao enviar o formulário: ${err}`;
+    returnModel.code = 500;
+
+    return res.status(500).json(returnModel);
+  }
+});
 // #endregion GET
 
 // #region POST

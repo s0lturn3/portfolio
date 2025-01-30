@@ -37,6 +37,15 @@ export class ContatoService {
     return this._httpClient.post<ApiResponse>(url, record, { 'headers': headers })
       .pipe( take(1), tap(response => this.showErrorMessage(response)) );
   }
+
+  public testGet(): Observable<ApiResponse> {
+    const headers = this._HTTP_HEADERS;
+
+    const url = `${this._BASE_URL}/get`;
+    
+    return this._httpClient.get<ApiResponse>(url, { 'headers': headers })
+      .pipe( take(1), tap(response => this.showErrorMessage(response)) );
+  }
   // #endregion POST
 
   // #endregion ==========> SERVICE METHODS <==========
