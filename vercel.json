@@ -13,9 +13,5 @@
   "builds": [
     { "src": "backend/src/*.js", "use": "@vercel/node" },
     { "src": "dist/portfolio/**/*", "use": "@vercel/static" }
-  ],
-  "routes": [
-    { "src": "/backend/src/(.*)", "dest": "/api/$1" },
-    { "src": "/(.*)", "dest": "/dist/portfolio/$1" }
   ]
 }
