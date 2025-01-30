@@ -3,6 +3,7 @@ import { Meta, Title } from '@angular/platform-browser';
 import { Router, RouterOutlet } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 
+
 @Component({
   selector: 'app-root',
   standalone: true,

@@ -17,6 +17,7 @@ import { TranslatePipe } from '@ngx-translate/core';
 
       p {
         color: var(--light-300) !important;
+
       }
     }
   `
