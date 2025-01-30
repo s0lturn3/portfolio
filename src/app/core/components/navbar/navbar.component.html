@@ -1,20 +1,19 @@
 <nav class="navbar row py-4 sticky-top">
    <div id="navbar-header" class="col-3 align-items-center text-center">
-      <a href="" class="fs-2">Solturne</a>
+      <a href="" class="fs-2 text-primary-300">Solturne</a>
    </div>
 
-   <div id="navbar-menu" class="col-6 px-0 d-flex flex-row align-items-center justify-content-evenly">
-      <a href="#home">{{ 'home' | translate }}</a>
+   <div id="navbar-menu" class="col-6 px-0 d-flex flex-row align-items-center justify-content-center gap-5">
       <a href="#skills">{{ 'skills' | translate }}</a>
       <a href="#about">{{ 'about' | translate }}</a>
       <a href="#services">{{ 'services' | translate }}</a>
    </div>
 
    <div id="navbar-language" class="col-3 d-flex flex-row align-items-center justify-content-center gap-3 language">
-      <button class="btn btn-outline-primary-500" aria-label="change-language-btn"
+      <button class="btn btn-outline-primary-300" aria-label="change-language-btn"
          data-message="Button to change website language" (click)="changeLanguage()"
          tooltip="{{ 'switch-language' | translate }}" placement="left">
-         <fa-icon [icon]="faGlobe" />
+         <span class="text-light">{{ 'switch-to-language' | translate }}</span>
       </button>
    </div>
 </nav>

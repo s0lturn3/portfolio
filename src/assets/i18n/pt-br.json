@@ -3,7 +3,14 @@
    "skills": "Habilidades",
    "about": "Sobre mim",
    "services": "Serviços",
-   "contact": "E-MAIL",
+   "switch-to-language": "EN",
+
+   "contact-home-btn": "Me conte sobre sua ideia",
+   "img-tooltip": "Olha aí, sou eu! (mas o doguinho não é meu 😭)",
+   "img-tooltip-2": "Olha só, também sou eu! (confie em mim)",
+
+   "contact-email": "Entre em contato diretamente",
+   "tell-your-idea": "Me conte sobre sua ideia",
 
    "switch-language": "Switch to ENGLISH",
 
@@ -13,18 +20,48 @@
    
    "about-title": "Sobre Mim",
    "about-subtitle": "+3 ANOS DE EXPERIÊNCIA COM DESENVOLVIMENTO FULLSTACK",
-   "about-1-p": "Desenvolvedor com foco em Angular e .NET Framework, apaixonado por criar soluções eficientes e escaláveis.",
-   "about-2-p": "Possuo sólidas experiências em desenvolvimento de aplicações web com ênfase em microsserviços e interfaces interativas. Posso também citar o uso de testes, desenvolvimento e manutenção de bibliotecas npm e banco de dados.",
+   "about-1-p": "Sou desenvolvedor apaixonado por criar soluções eficientes e escaláveis com <span class='text-primary-300'>Angular, Node.js e C#</span>. Trabalho com aplicações web interativas e microsserviços, sempre buscando otimizar o desempenho de tudo.",
+   "about-2-p": "Atualmente, sou desenvolvedor fullstack em tempo integral, mas estou totalmente aberto para oportunidades de freelance. Tenho experiência com testes, manutenção de bibliotecas npm e bancos de dados, e estou sempre em busca de melhorar a qualidade e usabilidade das aplicações que crio.",
+   "about-3-p": "Ao longo da minha carreira, contribuí para projetos que priorizam um código limpo e manutenível, sempre buscando criar softwares que sejam tecnicamente sólidos e centrados no usuário.",
 
    "curriculum-btn": "CURRÍCULO",
 
    "services-title": "Serviços",
    "services-subtitle": "O QUE POSSO FAZER POR VOCÊ",
-   "services-frontend-card": "Desenvolvo interfaces de usuário modernas e responsivas, com design no Figma e uso de tecnologias como Bootstrap e SCSS para garantir uma navegação intuitiva.",
-   "services-backend-card": "Crio soluções de backend seguras e eficientes em .NET Framework, com integração de bancos de dados e foco em desempenho e escalabilidade.",
+   "services-frontend-card": "Desenvolvo interfaces de usuário modernas e responsivas desenhadas no Figma e uso de tecnologias como Bootstrap e SCSS para garantir uma navegação intuitiva.",
+   "services-backend-card": "Crio soluções de backend seguras e eficientes em C# ou Node.js, com integração de bancos de dados e foco em desempenho e escalabilidade.",
    "services-rest-card": "Desenvolvo e documento APIs RESTful seguras e escaláveis, além de realizar integrações com APIs de terceiros.",
    "services-angular-card": "Ofereço desenvolvimento especializado em Angular, incluindo bibliotecas personalizadas, componentização de código e soluções modulares.",
    "services-question": "Se interessou?",
 
-   "footer-copyright": "Todos os direitos reservados"
+   "made-with": "Feito com Angular, Bootstrap, Node.js e hospedado em",
+
+
+   "contact-first-name": "Nome",
+   "contact-last-name": "Sobrenome",
+   "contact-project-necessities": "Marque o que mais se adequa às suas necessidades:",
+   "contact-description": "Me conte sua ideia",
+   "contact-description-example": "Preciso de uma aplicação Web que consiga lidar com operações e agendamentos de consultas para uma clínica médica.",
+   
+   "UIUX": "UI/UX",
+   "WEB": "Web",
+   "MOBILE": "Mobile",
+   "DESKTOP": "Desktop",
+   "RESEARCH": "Pesquisa",
+   "OTHER": "Outros",
+   
+   "UIUX-tooltip": "Protótipos visuais, mockups, temas de cores, etc.",
+   "WEB-tooltip": "Desenvolvimento de aplicações para a web, podem ser apenas front-end, back-end ou full-stack.",
+   "MOBILE-tooltip": "Desenvolvimento de aplicações para dispositivos mobile, serão desenvolvidos em forma de PWA.",
+   "DESKTOP-tooltip": "Desenvolvimento de aplicações para dispositivos desktop.",
+   "RESEARCH-tooltip": "Auxílio na concepção de ideias, brainstorming e planejamento de projetos.",
+   "OTHER-tooltip": "Outros serviços",
+   
+   "contact-title": "Contato",
+   "contact-subtitle": "Deixe suas informações abaixo e eu retornarei o contato assim que possível.",
+   "contact-submit": "ENVIAR",
+   "contact-submitted": "ENVIADO",
+   "contact-reminder": "*Eu nunca nunquinha vou mostrar seus dados pra ninguém. Prometo 🥺",
+
+   "3d-model-tooltip": "OBA! Você encontrou outro eu... MAS EM 3 DIMENSÕES!!!"
 }

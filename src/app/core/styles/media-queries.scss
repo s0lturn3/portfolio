@@ -26,16 +26,25 @@
          align-items: center;
          justify-content: center !important;
    
-         #inicio-perfil {
-            height: 15rem;
-            width: 15rem;
+         #img-inicio-perfil {
+            height: 20rem;
+            width: 20rem;
             border-radius: 50%;
          }
       }
    
       > div:nth-child(2) {
          display: flex;
+         flex-direction: column;
          justify-content: start !important;
+         align-items: center;
+
+         width: 100%;
+
+         > div:nth-child(1) {
+            width: 100%;
+            text-align: center;
+         }
    
          .home-greet { font-size: 1rem !important; }
          .home-title { font-size: auto !important; }
@@ -43,15 +52,8 @@
       }
    
       .home-buttons {
-         max-width: 100%;
-         
-         .second-btns {
-            display: flex;
-            flex-direction: row;
-   
-            align-items: center;
-            justify-content: space-between;
-         }
+         width: 100%;
+         justify-content: center;
       }
    }
    // #endregion HOME MEDIA
@@ -72,11 +74,17 @@
          #about-me-img {
             height: 20rem;
             width: 20rem;
+            margin-bottom: 1rem;
          }
       }
    
       > div:nth-child(2) {
          flex-direction: column;
+         padding: 0 2rem;
+
+         .descriptions {
+            padding: 0 !important;
+         }
       }
    }
    // #endregion ABOUT MEDIA
@@ -98,4 +106,32 @@
       }
    }
    // #endregion SERVICES MEDIA
+}
+
+
+@media (max-width: 1023px) {
+   .formulario-content {
+      width: 100% !important;
+
+      .formulario {
+        width: 476px;
+      }
+   }
+   .fundo-content {
+      display: none;
+
+      // width: 0%;
+      // height: 100%;
+    
+      // background-image: url("../../../../assets/images/contact-form-bg.png");
+      // background-size: cover;
+      // background-position: center;
+   }
+}
+
+
+@media (max-width: 554px) {
+   .project-cards-list {
+      justify-content: center !important;
+   }
 }

@@ -71,8 +71,10 @@ export class SkillsBarComponent implements OnInit {
   backendList = [
     "C#",
     ".NET Framework",
-    "SQL Server",
+    "Microsoft SQL Server",
     "MySQL",
+    "Node.js",
+    "Microservices",
     "REST APIs"
   ];
 

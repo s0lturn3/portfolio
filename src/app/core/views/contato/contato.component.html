@@ -1,0 +1,75 @@
+<div class="contato-content d-flex">
+  <div class="formulario-content d-flex align-items-center justify-content-center bg-dark-300 p-3">
+
+    <div class="formulario">
+      <div class="header">
+        <div class="d-flex flex-row align-items-center justify-content-between">
+          <a type="button" class="btn btn-outline-primary-300 rounded" routerLink="/" routerLinkActive="router-link-active" >
+            <fa-icon [icon]="faArrowLeft" />
+          </a>
+  
+          <h2 class="title text-primary-300">{{ 'contact-title' | translate }}</h2>
+        </div>
+
+        <p class="my-3">{{ 'contact-subtitle' | translate }}</p>
+      </div>
+    
+      <form [formGroup]="contactForm">
+        <div class="row gap-3 gap-lg-0">
+          <div class="col-12 col-lg-6">
+            <label for="nomeInput" class="form-label"> <span class="text-primary-300">*</span> {{ 'contact-first-name' | translate }} </label>
+            <input type="text" class="form-control" id="nomeInput" placeholder="{{ 'contact-first-name' | translate }}" formControlName="nome">
+          </div>
+    
+          <div class="col-12 col-lg-6">
+            <label for="lastNameInput" class="form-label"> <span class="text-primary-300">*</span> {{ 'contact-last-name' | translate }} </label>
+            <input type="text" class="form-control" id="lastNameInput" placeholder="{{ 'contact-last-name' | translate }}" formControlName="sobrenome">
+          </div>
+        </div>
+    
+        <div class="row mt-3">
+          <div class="col">
+            <label for="emailInput" class="form-label"> <span class="text-primary-300">*</span> E-mail</label>
+            <input type="text" class="form-control" id="emailInput" placeholder="email@email.com" formControlName="email">
+          </div>
+        </div>
+    
+        <div class="d-flex flex-column mt-3 ">
+          <label class="mb-2"> {{ 'contact-project-necessities' | translate }} </label>
+    
+          <div class="d-flex flex-row gap-3 project-cards-list flex-wrap">
+            @for (card of projectCards; track $index) {
+              <div class="card project-card bg-dark-300 d-flex align-items-center justify-content-center"
+                [class.selected]="card.isSelected" (click)="card.isSelected = !card.isSelected" tooltip="{{ card.tooltip | translate }}">
+                {{ card.langCode | translate }}
+              </div>
+            }
+          </div>
+    
+        </div>
+    
+        <div class="row mt-3">
+          <div class="col">
+            <label for="descriptionTextarea" class="form-label"> <span class="text-primary-300">*</span> {{ 'contact-description' | translate }} </label>
+            <textarea class="form-control" id="descriptionTextarea" rows="3" placeholder="{{ 'contact-description-example' | translate }}" formControlName="descricao"></textarea>
+          </div>
+        </div>
+    
+        <p class="reminder-text">{{ 'contact-reminder' | translate }}</p>
+        
+        <div class="text-center">
+          <button class="btn w-50" [class]="emailSent ? 'btn-success' : 'btn-primary-500'" (click)="sendEmail()">
+            @if (emailSent) {  {{ 'contact-submitted' | translate }} <fa-icon [icon]="faCheck" /> }
+            @else { {{ 'contact-submit' | translate }} }
+          </button>
+        </div>
+      </form>
+    </div>
+
+  </div>
+  
+  <div class="fundo-content" [tooltip]="'3d-model-tooltip' | translate" placement="left">
+    <iframe src="https://my.spline.design/untitled-98ac41b878550f2a5b06394923385858/" frameborder="0" width="100%" height="100%" ></iframe>
+  </div>
+</div>
+
