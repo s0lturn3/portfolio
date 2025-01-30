@@ -48,6 +48,9 @@
 
    <div class="text-center show-content-anim" style="--show-delay: 6;">
       <p class="fs-5"> {{ 'services-question' | translate }} </p>
-      <a type="button" class="btn btn-outline-primary-500 fs-5" href="mailto:erickcarvalho.contato20@gmail.com" target="_blank"> {{ 'contact' | translate }} &nbsp; <fa-icon [icon]="faEnvelope" /> </a>
+
+      <div class="d-flex flex-row align-items-center justify-content-center">
+         <a type="button" class="btn btn-primary-500 fs-5" routerLink="/contact" routerLinkActive="router-link-active" > {{ 'tell-your-idea' | translate }} &nbsp; <fa-icon [icon]="faArrowRight" /> </a>
+      </div>
    </div>
 </div>

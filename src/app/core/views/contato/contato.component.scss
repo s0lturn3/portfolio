@@ -1,0 +1,56 @@
+@import "../../styles/global.scss";
+@import "../../styles/buttons.scss";
+@import "../../styles/animations.scss";
+@import "../../styles/media-queries.scss";
+
+.reminder-text {
+  font-size: 12px;
+}
+
+.project-cards-list {
+  justify-content: start;
+}
+
+.project-card {
+  width: 100%;
+  min-width: 200px;
+  max-width: 230px;
+  height: 72px;
+
+  border-color: var(--light-300) !important;
+  color: var(--light-300) !important;
+}
+.project-card.selected {
+  border-color: var(--primary-300) !important;
+  color: var(--primary-300) !important;
+}
+.project-card:hover {
+  border-color: var(--primary-300) !important;
+  color: var(--primary-300) !important;
+}
+
+
+
+.contato-content {
+  min-height: 100vh;
+}
+
+.formulario-content {
+  width: 50%;
+
+  .formulario {
+    width: 476px;
+  }
+}
+.fundo-content {
+  width: 50%;
+
+  iframe {
+    vertical-align: bottom;
+    height: 100%;
+  }
+
+  // background-image: url("../../../../assets/images/contact-form-bg.png");
+  // background-size: cover;
+  // background-position: center;
+}

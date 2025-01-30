@@ -1,6 +1,8 @@
-<div class="about-content mb-5 p-4 d-flex flex-row align-items-center justify-content-start show-content-anim" style="--show-delay: 1;">
+<div class="about-content mb-5 d-flex flex-row align-items-center justify-content-start show-content-anim" style="--show-delay: 1;">
    <div class="col text-center">
-      <img id="about-me-img" src="../../../../assets/images/perfil-about.gif" alt="gif-perfil">
+      <!-- <img id="about-me-img" src="../../../../assets/images/perfil-about.gif" alt="gif-perfil"> -->
+      <img id="about-me-img" class="rounded-circle" src="../../../../assets/images/perfil2.webp" alt="foto"
+         [tooltip]="'img-tooltip-2' | translate">
    </div>
    
    <div class="col text-start">
@@ -9,9 +11,10 @@
          <h2 class="fw-bold mb-5">{{ 'about-subtitle' | translate }}</h2>
       </div>
 
-      <div class="mb-3">
-         <p>{{ 'about-1-p' | translate }}</p>
-         <p>{{ 'about-2-p' | translate }}</p>
+      <div class="descriptions pe-5 mb-3">
+         <p [innerHTML]="'about-1-p' | translate"></p>
+         <p [innerHTML]="'about-2-p' | translate"></p>
+         <!-- <p>{{ 'about-3-p' | translate }}</p> -->
       </div>
 
       <a type="button" class="cv-btn btn btn-outline-primary-500 fs-5" aria-label="cv-download"
