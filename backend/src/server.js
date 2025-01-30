@@ -13,7 +13,7 @@ app.use(express.json());
 
 // Habilita o CORS
 app.use(cors({
-  origin: [ 'http://localhost:4200' ], // URLs permitidas
+  origin: '*', // URLs permitidas
   methods: [ 'OPTIONS', 'GET', 'POST', 'PUT', 'DELETE' ],
   allowedHeaders: [ 'Accept', 'Content-Type' ]
 }));
