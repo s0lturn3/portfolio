@@ -26,8 +26,10 @@
 
    // Fundos
    --dark-900: #161416;     // Cor de fundo para temas escuros
+   --dark-600: #453946;
    --dark-300: #201d20;
    --light-100: #FCFAF9;    // Cor de fundo para temas claros, facilita a leitura e o contraste
+   --light-300: #7e7e7e;
 }
 // #endregion PALETA DE CORES ----- */
 
@@ -38,8 +40,8 @@
    color: var(--light-100);
 }
 
-app-root, .app-wrapper {
-   
+app-root {
+   // height: 100%;
 }
 
 html, body {
@@ -77,7 +79,7 @@ a {
    transition: all .2s ease;
 }
 a:hover {
-   font-weight: bold;
+   // font-weight: bold;
 }
 // #endregion DEFINIÇÕES GLOBAIS ----- */
 

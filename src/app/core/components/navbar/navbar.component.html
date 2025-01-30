@@ -1,16 +1,19 @@
-<div class="navbar row py-4 sticky-top">
-   <div class="col-3 align-items-center text-center">
-      <a href="" class="fs-2">Solturne</a>
+<nav class="navbar row py-4 sticky-top">
+   <div id="navbar-header" class="col-3 align-items-center text-center">
+      <a href="" class="fs-2 text-primary-300">Solturne</a>
    </div>
 
-   <div class="col-6 px-0 d-flex flex-row align-items-center justify-content-evenly">
-      <a href="#inicio">{{ 'home' | translate }}</a>
+   <div id="navbar-menu" class="col-6 px-0 d-flex flex-row align-items-center justify-content-center gap-5">
       <a href="#skills">{{ 'skills' | translate }}</a>
-      <a href="#sobre-mim">{{ 'about' | translate }}</a>
-      <a href="#servicos">{{ 'services' | translate }}</a>
+      <a href="#about">{{ 'about' | translate }}</a>
+      <a href="#services">{{ 'services' | translate }}</a>
    </div>
 
-   <div class="col-3 d-flex flex-row align-items-center justify-content-center gap-3 language">
-      <button class="btn btn-outline-primary-500" (click)="changeLanguage()" aria-label="change-language-btn" data-message="Button to change website language" > <fa-icon [icon]="faGlobe" /> </button>
+   <div id="navbar-language" class="col-3 d-flex flex-row align-items-center justify-content-center gap-3 language">
+      <button class="btn btn-outline-primary-300" aria-label="change-language-btn"
+         data-message="Button to change website language" (click)="changeLanguage()"
+         tooltip="{{ 'switch-language' | translate }}" placement="left">
+         <span class="text-light">{{ 'switch-to-language' | translate }}</span>
+      </button>
    </div>
-</div>
+</nav>

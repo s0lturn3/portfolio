@@ -1,13 +1,18 @@
-import { faCode, faDisplay, faGlobe, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faCode, faDisplay, faGlobe, faEnvelope, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { Component } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faAngular } from '@fortawesome/free-brands-svg-icons';
 import { TranslatePipe } from '@ngx-translate/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-servicos',
   standalone: true,
-  imports: [ FontAwesomeModule, TranslatePipe ],
+  imports: [
+    FontAwesomeModule,
+    TranslatePipe,
+    RouterModule
+  ],
   templateUrl: './servicos.component.html',
   styles: `
     @import "../../styles/global.scss";
@@ -18,7 +23,7 @@ import { TranslatePipe } from '@ngx-translate/core';
     .card {
       color: var(--light-100);
       transition: all .2s ease;
-      // width: 100%;
+      width: 25rem;
 
       &:hover { border: solid 1px var(--primary-300); }
 
@@ -42,6 +47,7 @@ export class ServicosComponent {
   faAngular = faAngular;
 
   faEnvelope = faEnvelope;
+  faArrowRight = faArrowRight;
   // #endregion PUBLIC
 
   // #endregion ==========> PROPERTIES <==========

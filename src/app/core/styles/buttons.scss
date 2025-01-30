@@ -7,7 +7,12 @@ $buttons: (
 
    "secondary-300": var(--secondary-300),
    "secondary-500": var(--secondary-500),
-   "secondary-700": var(--secondary-700)
+   "secondary-700": var(--secondary-700),
+
+   "warning": var(--warning-500),
+   "error": var(--error-500),
+   "info": var(--info-500),
+   "success": var(--success-500),
 );
 
 // Definição de classes de botões cheios

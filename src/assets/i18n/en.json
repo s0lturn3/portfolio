@@ -3,24 +3,65 @@
    "skills": "Skills",
    "about": "About Me",
    "services": "Services",
-   "contact": "CONTACT ME",
+   "switch-to-language": "PT",
+   
+   "contact-home-btn": "Tell me about your idea",
+   "img-tooltip": "Oh look, it's me! (but the doggo's not mine 😭)",
+   "img-tooltip-2": "Oh, it's also me! (trust me)",
+
+   "contact-email": "Contact me directly",
+   "tell-your-idea": "Tell me about your idea",
+
+   "switch-language": "Trocar para PORTUGUÊS",
 
    "home-greeting": "Welcome",
-   "home-title": "You can call me ",
+   "home-title": "Call me ",
    "home-subtitle": "Developer",
 
    "about-title": "About Me",
    "about-subtitle": "+3 YEARS OF EXPERIENCE IN FULLSTACK DEVELOPMENT",
-   "about-1-p": "Developer focused on Angular and .NET Framework, passionate about creating efficient and scalable solutions.",
-   "about-2-p": "I have solid experience in developing web applications with an emphasis on microservices and interactive interfaces. I can also mention the use of testing, development and maintenance of npm libraries, and databases.",
+   "about-1-p": "I’m a developer passionate about creating efficient, scalable solutions with <span class='text-primary-300'>Angular, Node.js, and C#</span>. I specialize in building web apps with interactive interfaces and microservices, making sure everything is optimized for performance.",
+   "about-2-p": "Currently, I work full-time as a fullstack developer, but I’m always open to freelance opportunities. I’ve got experience with testing, maintaining npm libraries, and working with databases, and I’m always aiming to improve the quality and usability of the apps I build.",
+   "about-3-p": "Throughout my career, I’ve contributed to projects that prioritize clean, maintainable code, while striving to create software that is both technically sound and user-centric.",
+
+   "curriculum-btn": "CURRICULUM",
 
    "services-title": "Services",
    "services-subtitle": "WHAT I CAN DO FOR YOU",
-   "services-frontend-card": "I develop modern and responsive user interfaces, design in Figma, and use technologies like Bootstrap and SCSS to ensure intuitive navigation.",
-   "services-backend-card": "I create secure and efficient backend solutions in .NET Framework, with database integration and a focus on performance and scalability.",
+   "services-frontend-card": "I develop modern and responsive user interfaces designed in Figma and use technologies like Bootstrap and SCSS to ensure intuitive navigation.",
+   "services-backend-card": "I create secure and efficient backend solutions in C# or Node.js, with database integration and a focus on performance and scalability.",
    "services-rest-card": "I develop and document secure and scalable RESTful APIs, as well as integrate third-party APIs.",
    "services-angular-card": "I offer specialized Angular development, including custom libraries, code componentization, and modular solutions.",
    "services-question": "Interested?",
 
-   "footer-copyright": "All rights reserved"
+   "made-with": "Made with Angular, Bootstrap, Node.js and hosted on",
+
+
+   "contact-first-name": "First name",
+   "contact-last-name": "Last name",
+   "contact-project-necessities": "Select the options that best match your necessities:",
+   "contact-description": "Tell me about your idea",
+   "contact-description-example": "I need a web application that can handle operations and appointment scheduling for a medical clinic.",
+
+   "UIUX": "UI/UX",
+   "WEB": "Web",
+   "MOBILE": "Mobile",
+   "DESKTOP": "Desktop",
+   "RESEARCH": "Research",
+   "OTHER": "Other",
+
+   "UIUX-tooltip": "Visual prototypes, mockups, color themes, etc.",
+   "WEB-tooltip": "Web application development, can be just front-end, back-end or full-stack.",
+   "MOBILE-tooltip": "Development of applications for mobile devices, will be developed in PWA form.",
+   "DESKTOP-tooltip": "Desenvolvimento de aplicações para dispositivos desktop.",
+   "RESEARCH-tooltip": "Application development for desktop devices.",
+   "OTHER-tooltip": "Other services",
+
+   "contact-title": "Contact",
+   "contact-subtitle": "Leave your info below and I shall return to you as soon as possible.",
+   "contact-submit": "SEND",
+   "contact-submitted": "SENT",
+   "contact-reminder": "*I'll never ever share your data with anyone else. I promise 🥺",
+
+   "3d-model-tooltip": "YAY! You found another me... BUT IN 3 DIMENSIONS!!!"
 }

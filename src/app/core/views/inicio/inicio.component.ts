@@ -1,17 +1,27 @@
 import { Component } from '@angular/core';
+import { AsyncPipe } from '@angular/common';
+
+import { map } from 'rxjs';
+import { TranslatePipe, TranslateService } from '@ngx-translate/core';
+
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faGithub, faLinkedin, faUpwork } from '@fortawesome/free-brands-svg-icons';
-import { faArrowDown, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faArrowDown, faArrowRight, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+
 import { TypewriterService } from '../../services/typewriter.service';
-import { map } from 'rxjs';
-import { AsyncPipe } from '@angular/common';
-import { TranslatePipe } from '@ngx-translate/core';
-import { LanguageService } from '../../services/language.service';
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-inicio',
   standalone: true,
-  imports: [ FontAwesomeModule, AsyncPipe, TranslatePipe ],
+  imports: [
+    FontAwesomeModule,
+    AsyncPipe,
+    TranslatePipe,
+    TooltipModule,
+    RouterModule
+  ],
   templateUrl: './inicio.component.html',
   styles: `
     @import "../../styles/global.scss";
@@ -19,6 +29,18 @@ import { LanguageService } from '../../services/language.service';
     @import "../../styles/animations.scss";
     @import "../../styles/media-queries.scss";
 
+    #img-inicio-perfil {
+      height: 25rem;
+      width: 25rem;
+    }
+
+    .first-btns {
+      a {
+        transition: all .2s ease;
+        // &:hover { border-color: var(--primary-300); }
+        &:active { border-color: var(--primary-300); }
+      }
+    }
   `
 })
 export class InicioComponent {
@@ -26,17 +48,17 @@ export class InicioComponent {
   // #region ==========> PROPERTIES <==========
 
   // #region PRIVATE
-  private _titles: string[] = [ "Erick_", "Solturne_" ];
-  private _subtitles: string[] = [ "Angular_", "C#_", ".NET Framework_", "Fullstack_" ];
+  private _names: string[] = [ " Erick", " Solturne" ];
+  private _specialties: string[] = [ " Angular", " C#", " Node.js", " Fullstack", " Frontend" ];
   // #endregion PRIVATE
 
   // #region PUBLIC
-  public typedTitle$ = this.typewriterService
-    .getTypewriterEffect(this._titles)
+  public typedName$ = this.typewriterService
+    .getTypewriterEffect(this._names)
     .pipe(map((text) => text));
 
-  public typedSubtitle$ = this.typewriterService
-    .getTypewriterEffect(this._subtitles)
+  public typedSpecialty$ = this.typewriterService
+    .getTypewriterEffect(this._specialties)
     .pipe(map((text) => text));
 
 
@@ -45,12 +67,7 @@ export class InicioComponent {
   public faUpwork = faUpwork;
   public faEnvelope = faEnvelope;
   public faArrowDown = faArrowDown;
-
-  public download = {
-    url_ptBR: "../../../../assets/documents/cv.pdf",
-    url_ENG: "../../../../assets/documents/cv_eng.pdf.pdf",
-    filename: "erick-cv.pdf"
-  };
+  public faArrowRight = faArrowRight;
   // #endregion PUBLIC
 
   // #endregion ==========> PROPERTIES <==========
@@ -59,7 +76,7 @@ export class InicioComponent {
   // #region ==========> INITIALIZATION <==========
   constructor(
     private typewriterService: TypewriterService,
-    public languageService: LanguageService
+    public translateService: TranslateService
   ) { }
 
   ngOnInit(): void { }
