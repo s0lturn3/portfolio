@@ -11,12 +11,6 @@ const app = express();
 // Middleware para interpretar JSON no corpo das requisições
 app.use(express.json());
 
-// Habilita o CORS
-app.use(cors({
-  origin: '*', // URLs permitidas
-  methods: [ 'OPTIONS', 'GET', 'POST', 'PUT', 'DELETE' ],
-  allowedHeaders: [ 'Accept', 'Content-Type' ]
-}));
 // #endregion CONFIGS
 
 
