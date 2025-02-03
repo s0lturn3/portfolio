@@ -23,7 +23,9 @@ export class ContatoService {
   // #endregion ==========> PROPERTIES <==========
 
 
-  constructor( private _httpClient: HttpClient ) { }
+  constructor( private _httpClient: HttpClient ) {
+    this._BASE_URL = !environment.production ? this._BASE_URL : `${ environment.expressAPI }/contato`;
+  }
 
 
   // #region ==========> SERVICE METHODS <==========

@@ -6,5 +6,6 @@ export const environment = {
 	production: true,
 	hostName: hostName,
 
-	localhost: `${hostName}/api`
+	localhost: `${hostName}/api`,
+	expressAPI: 'https://express-api-red-nine.vercel.app/api'
 };
