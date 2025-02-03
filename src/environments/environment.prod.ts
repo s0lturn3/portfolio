@@ -6,5 +6,6 @@ export const environment = {
 	production: true,
 	hostName: hostName,
 
-	localhost: `${hostName}/api`
+	localhost: `${hostName}/api`,
+	expressAPI: 'https://portfolio-node-eight.vercel.app/api'
 };

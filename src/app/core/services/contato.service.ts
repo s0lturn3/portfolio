@@ -17,13 +17,15 @@ export class ContatoService {
 
   // #region PRIVATE
   private readonly _BASE_URL: string = `${ environment.localhost }/contato`;
-  private readonly _HTTP_HEADERS = new HttpHeaders().set('Content-Type', 'application/json');
+  private readonly _HTTP_HEADERS = new HttpHeaders().set('Content-Type', 'application/json').set('Accept', 'application/json');
   // #endregion PRIVATE
 
   // #endregion ==========> PROPERTIES <==========
 
 
-  constructor( private _httpClient: HttpClient ) { }
+  constructor( private _httpClient: HttpClient ) {
+    this._BASE_URL = !environment.production ? this._BASE_URL : `${ environment.expressAPI }/contato`;
+  }
 
 
   // #region ==========> SERVICE METHODS <==========
@@ -35,6 +37,15 @@ export class ContatoService {
     const url = `${this._BASE_URL}/send`;
     
     return this._httpClient.post<ApiResponse>(url, record, { 'headers': headers })
+      .pipe( take(1), tap(response => this.showErrorMessage(response)) );
+  }
+
+  public testGet(): Observable<ApiResponse> {
+    const headers = this._HTTP_HEADERS;
+
+    const url = `${this._BASE_URL}/get`;
+    
+    return this._httpClient.get<ApiResponse>(url, { 'headers': headers })
       .pipe( take(1), tap(response => this.showErrorMessage(response)) );
   }
   // #endregion POST
