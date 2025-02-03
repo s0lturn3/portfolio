@@ -18,7 +18,7 @@ const { ApiResponse } = require('../models/ApiResponse.model');
 
 // #region ENDPOINTS
 
-// #region GET
+// #region GET      isso aqui funciona
 router.get('/get', async (req, res) => {
   const returnModel = req.returnModel;
   
@@ -36,7 +36,7 @@ router.get('/get', async (req, res) => {
 });
 // #endregion GET
 
-// #region POST
+// #region POST     isso aqui não
 router.post('/send', validatePayload, async (req, res) => {
   const returnModel = req.returnModel;
   const contatoFormModel = req.body;

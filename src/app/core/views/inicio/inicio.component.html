@@ -14,7 +14,7 @@
                   {{ 'home-subtitle' | translate }} <span class="text-primary-500">{{ typedSpecialty$ | async }}</span>
                }
                @else {
-                  {{ 'home-subtitle' | translate }} <span class="text-primary-500">{{ typedSpecialty$ | async }}</span>
+                  <span class="text-primary-500">{{ typedSpecialty$ | async }}</span> {{ 'home-subtitle' | translate }}
                }
             }
             @else {
@@ -24,14 +24,7 @@
       </div>
 
       <div class="home-buttons d-flex gap-3 show-content-anim" style="--show-delay: 5;">
-         <!-- <div class="d-flex flex-row flex-wrap gap-2 justify-content-evenly">
-            <a type="button" id="linkedin-btn" aria-label="linkedin-btn" data-message="LinkedIn redirect button" class="btn" href="https://www.linkedin.com/in/erick-carvalho-40a7471ba/" target="_blank"> <fa-icon [icon]="faLinkedIn" size="2x" /> </a>
-            <a type="button" id="github-btn" aria-label="github-btn" data-message="Github redirect button" class="btn" href="https://github.com/s0lturn3" target="_blank"> <fa-icon [icon]="faGithub" size="2x" /> </a>
-            <a type="button" id="upwork-btn" aria-label="upwork-btn" data-message="Upwork redirect button" class="btn align-middle" href="https://www.upwork.com/freelancers/~01461935f19114c1bf" target="_blank"> <fa-icon [icon]="faUpwork" size="2x" /> </a>
-         </div> -->
-
          <a type="button" class="btn btn-outline-primary-500 fs-4" routerLink="/contact" routerLinkActive="router-link-active" > {{ 'contact-home-btn' | translate }} &nbsp; <fa-icon [icon]="faArrowRight" /> </a>
-
       </div>
    </div>
 </div>
