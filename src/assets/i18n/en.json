@@ -34,7 +34,7 @@
    "services-angular-card": "I offer specialized Angular development, including custom libraries, code componentization, and modular solutions.",
    "services-question": "Interested?",
 
-   "made-with": "Made with Angular, Bootstrap, Node.js and hosted on",
+   "made-with": "Made with Angular and Node.js (3D model made in Spline) and all was hosted on",
 
 
    "contact-first-name": "First name",
@@ -53,15 +53,17 @@
    "UIUX-tooltip": "Visual prototypes, mockups, color themes, etc.",
    "WEB-tooltip": "Web application development, can be just front-end, back-end or full-stack.",
    "MOBILE-tooltip": "Development of applications for mobile devices, will be developed in PWA form.",
-   "DESKTOP-tooltip": "Desenvolvimento de aplicações para dispositivos desktop.",
+   "DESKTOP-tooltip": "Development of applications for desktop devices.",
    "RESEARCH-tooltip": "Application development for desktop devices.",
    "OTHER-tooltip": "Other services",
 
    "contact-title": "Contact",
    "contact-subtitle": "Leave your info below and I shall return to you as soon as possible.",
    "contact-submit": "SEND",
+   "contact-submiting": "SENDING...",
    "contact-submitted": "SENT",
    "contact-reminder": "*I'll never ever share your data with anyone else. I promise 🥺",
 
-   "3d-model-tooltip": "YAY! You found another me... BUT IN 3 DIMENSIONS!!!"
+   "3d-model-tooltip": "hello :p",
+   "3d-model-contact-tooltip": "YAY! You found another me... BUT IN 3 DIMENSIONS...AGAIN!!!"
 }

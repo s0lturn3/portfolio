@@ -30,8 +30,14 @@ import { RouterModule } from '@angular/router';
     @import "../../styles/media-queries.scss";
 
     #img-inicio-perfil {
-      height: 25rem;
-      width: 25rem;
+      height: 28rem;
+      width: 28rem;
+    }
+    img.img-inicio-perfil {
+      display: none;
+    }
+    div.img-inicio-perfil {
+      display: block;
     }
 
     .first-btns {

@@ -37,10 +37,10 @@
         <div class="d-flex flex-column mt-3 ">
           <label class="mb-2"> {{ 'contact-project-necessities' | translate }} </label>
     
-          <div class="d-flex flex-row gap-3 project-cards-list flex-wrap">
+          <div class="row row-cols-2 px-2 gap-3 project-cards-list">
             @for (card of projectCards; track $index) {
-              <div class="card project-card bg-dark-300 d-flex align-items-center justify-content-center"
-                [class.selected]="card.isSelected" (click)="card.isSelected = !card.isSelected" tooltip="{{ card.tooltip | translate }}">
+              <div class="col card project-card bg-dark-300 d-flex align-items-center justify-content-center"
+                [class.selected]="card.isSelected" (click)="card.isSelected = !card.isSelected" container="body" tooltip="{{ card.tooltip | translate }}">
                 {{ card.langCode | translate }}
               </div>
             }
@@ -58,17 +58,33 @@
         <p class="reminder-text">{{ 'contact-reminder' | translate }}</p>
         
         <div class="text-center">
-          <button class="btn w-50" [class]="emailSent ? 'btn-success' : 'btn-primary-500'" (click)="sendEmail()">
-            @if (emailSent) {  {{ 'contact-submitted' | translate }} <fa-icon [icon]="faCheck" /> }
-            @else { {{ 'contact-submit' | translate }} }
-          </button>
+          @switch (btnSituation) {
+            @case (0) {
+              <button class="btn w-50 btn-primary-500" (click)="sendEmail()"> {{ 'contact-submit' | translate }} </button>
+            }
+            @case (1) {
+              <span class="spinner-border text-primary-300" aria-hidden="true"></span>
+              <!-- <button class="btn w-50 btn-primary-500" type="button" disabled>
+                <span role="status" class="ms-1"> {{ 'contact-submiting' | translate }} </span>
+              </button> -->
+            }
+            @case (2) {
+              <div class="text-success fs-5">
+                {{ 'contact-submitted' | translate }} <fa-icon [icon]="faCheck" style="color:green" />
+              </div>
+
+              <!-- <button class="btn w-50 btn-success" (click)="sendEmail()">
+                {{ 'contact-submitted' | translate }} <fa-icon [icon]="faCheck" />
+              </button> -->
+            }
+          }
         </div>
       </form>
     </div>
 
   </div>
   
-  <div class="fundo-content" [tooltip]="'3d-model-tooltip' | translate" placement="left">
+  <div class="fundo-content" [tooltip]="'3d-model-contact-tooltip' | translate" placement="left">
     <iframe src="https://my.spline.design/untitled-98ac41b878550f2a5b06394923385858/" frameborder="0" width="100%" height="100%" ></iframe>
   </div>
 </div>

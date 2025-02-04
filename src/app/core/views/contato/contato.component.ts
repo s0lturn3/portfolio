@@ -41,7 +41,7 @@ export class ContatoComponent {
   // #region PUBLIC
   public contatoFormModel: ContatoFormModel = new ContatoFormModel();
 
-  emailSent: boolean = false;
+  btnSituation: 0 | 1 | 2 = 0;
 
   faArrowLeft = faArrowLeft;
   faCheck = faCheck;
@@ -87,31 +87,33 @@ export class ContatoComponent {
 
   // #region POST
   sendEmail(): void {
-
     if (this.contactForm.valid) {
+      this.btnSituation = 1;
+
       this.setNecessidades();
       const record: ContatoFormModel = this.contactForm.getRawValue() as ContatoFormModel;
 
       this._contatoService.sendEmail(record).subscribe({
         next: response => {
-          this.emailSent = true;
-          
+          this.btnSituation = 2;
           this.contactForm.reset();
           this.projectCards.forEach(proj => proj.isSelected = false );
           
           setTimeout(() => {
-            this.emailSent = false;
+            this.btnSituation = 0;
           }, 3000);
-
-          console.log(response);
+          
+          // console.log(response);
         },
         error: error => {
           console.error(error.error.errorMessage);
+          this.btnSituation = 0;
         }
       });
     }
     else {
-      console.log("Campos inválidos!");
+      console.error("Campos inválidos!");
+      alert("Todos os campos são obrigatórios.");
     }
   }
   // #endregion POST
