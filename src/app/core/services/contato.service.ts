@@ -16,7 +16,7 @@ export class ContatoService {
   // #region ==========> PROPERTIES <==========
 
   // #region PRIVATE
-  private readonly _BASE_URL: string = `${ environment.localhost }/contato`;
+  private readonly _BASE_URL: string = `${ environment.expressAPI }/contato`;
   private readonly _HTTP_HEADERS = new HttpHeaders().set('Content-Type', 'application/json').set('Accept', 'application/json');
   // #endregion PRIVATE
 

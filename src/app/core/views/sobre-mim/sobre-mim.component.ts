@@ -24,6 +24,12 @@ import { TooltipModule } from 'ngx-bootstrap/tooltip';
       width: 25rem;
       border-radius: 50%;
     }
+    img.about-me-img-mobile {
+      display: none;
+    }
+    img.about-me-img {
+      display: inline;
+    }
 
     .cv-btn {
       width: fit-content;

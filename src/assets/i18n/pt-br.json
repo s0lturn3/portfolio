@@ -34,7 +34,7 @@
    "services-angular-card": "Ofereço desenvolvimento especializado em Angular, incluindo bibliotecas personalizadas, componentização de código e soluções modulares.",
    "services-question": "Se interessou?",
 
-   "made-with": "Feito com Angular, Bootstrap, Node.js e hospedado em",
+   "made-with": "Feito com Angular e Node.js (modelo 3D feito com Spline) e tudo hospedado no",
 
 
    "contact-first-name": "Nome",
@@ -60,8 +60,10 @@
    "contact-title": "Contato",
    "contact-subtitle": "Deixe suas informações abaixo e eu retornarei o contato assim que possível.",
    "contact-submit": "ENVIAR",
+   "contact-submiting": "ENVIANDO...",
    "contact-submitted": "ENVIADO",
    "contact-reminder": "*Eu nunca nunquinha vou mostrar seus dados pra ninguém. Prometo 🥺",
 
-   "3d-model-tooltip": "OBA! Você encontrou outro eu... MAS EM 3 DIMENSÕES!!!"
+   "3d-model-tooltip": "oii :p",
+   "3d-model-contact-tooltip": "OBA! Você encontrou outro eu... MAS EM 3 DIMENSÕES...de novo!!!"
 }
