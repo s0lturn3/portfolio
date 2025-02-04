@@ -52,7 +52,7 @@ export class ContatoComponent {
     { nome: 'Mobile', langCode: 'MOBILE', tooltip: 'MOBILE-tooltip', isSelected: false },
     { nome: 'Desktop', langCode: 'DESKTOP', tooltip: 'DESKTOP-tooltip', isSelected: false },
     { nome: 'Research', langCode: 'RESEARCH', tooltip: 'RESEARCH-tooltip', isSelected: false },
-    { nome: 'Other', langCode: 'OTHER', tooltip: 'OTHER-tooltip', isSelected: true },
+    { nome: 'Other', langCode: 'OTHER', tooltip: 'OTHER-tooltip', isSelected: false },
   ];
   // #endregion PUBLIC
 
