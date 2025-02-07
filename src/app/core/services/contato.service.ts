@@ -16,7 +16,7 @@ export class ContatoService {
   // #region ==========> PROPERTIES <==========
 
   // #region PRIVATE
-  private readonly _BASE_URL: string = `${ environment.nestAPI }/contato`;
+  private readonly _BASE_URL: string = `${ environment.expressAPI }/contato`;
   private readonly _HTTP_HEADERS = new HttpHeaders().set('Content-Type', 'application/json').set('Accept', 'application/json');
   // #endregion PRIVATE
 
@@ -24,7 +24,7 @@ export class ContatoService {
 
 
   constructor( private _httpClient: HttpClient ) {
-    this._BASE_URL = !environment.production ? this._BASE_URL : `${ environment.nestAPI }/contato`;
+    this._BASE_URL = !environment.production ? this._BASE_URL : `${ environment.expressAPI }/contato`;
   }
 
 
