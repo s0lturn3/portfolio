@@ -7,5 +7,6 @@ export const environment = {
 	hostName: hostName,
 
 	localhost: `${hostName}/api`,
-	expressAPI: 'https://portfolio-node-eight.vercel.app/api'
+	expressAPI: 'https://portfolio-node-eight.vercel.app/api',
+	nestAPI: 'https://portfolio-api-3w3p.onrender.com/api'
 };
