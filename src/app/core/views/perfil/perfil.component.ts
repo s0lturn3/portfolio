@@ -16,7 +16,7 @@ import { SobreMimComponent } from '../sobre-mim/sobre-mim.component';
     SkillsBarComponent,
     SobreMimComponent,
     ServicosComponent,
-    FooterComponent,
+    FooterComponent
   ],
   templateUrl: './perfil.component.html',
   styleUrl: './perfil.component.scss'
