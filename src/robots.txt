@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://solturne.vercel.app/sitemap.xml
+Sitemap: https://solturne.dev/sitemap.xml

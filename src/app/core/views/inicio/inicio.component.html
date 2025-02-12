@@ -1,5 +1,5 @@
 <div class="home-content vh-100 p-4 px-3 d-flex flex-row align-items-start justify-content-center gap-5">
-   <div class="col h-100 d-flex align-items-center justify-content-end show-content-anim" style="--show-delay: 2;">
+   <div class="col h-100 d-flex align-items-center justify-content-end show-content-anim" style="--show-delay: 0;">
       <img id="img-inicio-perfil" class="img-inicio-perfil rounded-circle" src="../../../../assets/images/perfil4.jpg" alt="foto" [tooltip]="'img-tooltip' | translate">
       
       <div class="img-inicio-perfil" [tooltip]="'3d-model-tooltip' | translate">
@@ -7,7 +7,7 @@
       </div>
    </div>
 
-   <div class="col h-100 d-flex flex-column align-items-start justify-content-center show-content-anim" style="--show-delay: 0;">
+   <div class="col h-100 d-flex flex-column align-items-start justify-content-center show-content-anim" style="--show-delay: 1;">
       <div class="mb-4">
          <p class="fs-4 home-greet"> {{ 'home-greeting' | translate }} 👋 </p>
          <h1 class="home-title"> {{ 'home-title' | translate }} <span class="text-primary-500">{{ typedName$ | async }} </span></h1>
@@ -27,7 +27,7 @@
          </h4>
       </div>
 
-      <div class="home-buttons d-flex gap-3 show-content-anim" style="--show-delay: 5;">
+      <div class="home-buttons d-flex gap-3 show-content-anim" >
          <a type="button" class="btn btn-outline-primary-500 fs-4" routerLink="/contact" routerLinkActive="router-link-active" > {{ 'contact-home-btn' | translate }} &nbsp; <fa-icon [icon]="faArrowRight" /> </a>
       </div>
    </div>

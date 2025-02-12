@@ -59,8 +59,15 @@ export class AppComponent {
     ngOnInit(): void {
       this.currentUrl = this._router.url;
   
-      this._meta.updateTag({ name: 'description', content: 'Desenvolvedor fullstack especializado em Angular e .NET Framework' });
+      this._meta.updateTag({ name: 'description', content: 'Desenvolvedor fullstack especialista em Angular C# e migrando para NestJS, criando aplicações web modernas, performáticas e escaláveis. Ofereço desenvolvimento sob demanda para empresas e empreendedores, com foco em soluções eficientes e personalizadas.' });
       this._meta.updateTag({ name: 'title', content: 'Solturne' });
+
+      this._meta.updateTag({ name: 'author', content: 'Solturne' });
+      this._meta.updateTag({ name: 'robots', content: 'index, follow' }); // Para SEO
+      this._meta.updateTag({ property: 'og:title', content: 'Desenvolvedor Web | Solturne' });
+      this._meta.updateTag({ property: 'og:description', content: 'Desenvolvedor fullstack especializado em Angular e NestJS, criando aplicações modernas e escaláveis.' });
+      this._meta.updateTag({ property: 'og:image', content: 'assets/images/perfil4.webp' });
+      this._meta.updateTag({ property: 'og:url', content: 'https://solturne.dev' });
   
       this._titleService.setTitle('Solturne');
   
