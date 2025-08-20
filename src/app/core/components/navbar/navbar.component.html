@@ -1,15 +1,15 @@
 <nav class="navbar row py-4 sticky-top">
-   <div id="navbar-header" class="col-3 align-items-center text-center">
+   <div id="navbar-header" class="col-1 col-sm-3 align-items-center text-center">
       <a href="" class="fs-2 text-primary-300">Solturne</a>
    </div>
 
-   <div id="navbar-menu" class="col-6 px-0 d-flex flex-row align-items-center justify-content-center gap-5">
+   <div id="navbar-menu" class="col-1 col-sm-6 px-0 d-flex flex-row align-items-center justify-content-center gap-5">
       <a href="#skills">{{ 'skills' | translate }}</a>
       <a href="#about">{{ 'about' | translate }}</a>
       <a href="#services">{{ 'services' | translate }}</a>
    </div>
 
-   <div id="navbar-language" class="col-3 ps-0 d-flex flex-row align-items-center justify-content-center language">
+   <div id="navbar-language" class="offset-0 col-3 offset-sm-0 ps-0 pe-4 d-flex flex-row align-items-center justify-content-end language">
       <div id="navbar-language" class="btn-group language" role="group" aria-label="Language buttons">
          <input type="radio" class="btn-check" name="btnradio" id="btnradio-en" (click)="changeLanguage('en')" [checked]="storage.getItem('lang') === 'en'">
          <label class="btn btn-outline-primary-300" for="btnradio-en" tooltip="English" placement="bottom">EN</label>
