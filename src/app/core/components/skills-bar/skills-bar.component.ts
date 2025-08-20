@@ -74,6 +74,7 @@ export class SkillsBarComponent implements OnInit {
     "Microsoft SQL Server",
     "MySQL",
     "Node.js",
+    "NestJS",
     "Microservices",
     "REST APIs"
   ];
@@ -86,6 +87,7 @@ export class SkillsBarComponent implements OnInit {
     "Unit Tests",
     "E2E",
     "Jasmine & Karma",
+    "Docker",
     "Cypress",
     "PowerBI",
     "Figma"

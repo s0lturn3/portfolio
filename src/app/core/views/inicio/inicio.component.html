@@ -27,8 +27,15 @@
          </h4>
       </div>
 
-      <div class="home-buttons d-flex gap-3 show-content-anim" >
-         <a type="button" class="btn btn-outline-primary-500 fs-4" routerLink="/contact" routerLinkActive="router-link-active" > {{ 'contact-home-btn' | translate }} &nbsp; <fa-icon [icon]="faArrowRight" /> </a>
+      <div class="home-buttons d-flex flex-column gap-3 show-content-anim" >
+         <div class="d-flex justify-content-center justify-content-md-start">
+            <a type="button" tabindex="2" class="btn btn-outline-primary-500 fs-4" routerLink="/contact" routerLinkActive="router-link-active" > {{ 'contact-home-btn' | translate }} &nbsp; <fa-icon [icon]="faArrowRight" /> </a>
+         </div>
+         <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-3">
+            <a type="button" tabindex="3" class="btn btn-outline-primary-500 fs-4" href="https://www.linkedin.com/in/erick-carvalho-40a7471ba/" target="_blank" > <fa-icon [icon]="faLinkedIn" /> </a>
+            <a type="button" tabindex="4" class="btn btn-outline-primary-500 fs-4" href="https://github.com/s0lturn3" target="_blank" > <fa-icon [icon]="faGithub" /> </a>
+            <a type="button" tabindex="5" class="btn btn-outline-primary-500 fs-4" href="https://www.upwork.com/freelancers/~01461935f19114c1bf?mp_source=share" target="_blank" > <fa-icon [icon]="faUpwork" /> </a>
+         </div>
       </div>
    </div>
 </div>
