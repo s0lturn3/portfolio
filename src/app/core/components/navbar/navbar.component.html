@@ -9,7 +9,7 @@
       <a href="#services">{{ 'services' | translate }}</a>
    </div>
 
-   <div id="navbar-language" class="col-3 d-flex flex-row align-items-center justify-content-center gap-3 language">
+   <div id="navbar-language" class="col-3 ps-0 d-flex flex-row align-items-center justify-content-center language">
       <div id="navbar-language" class="btn-group language" role="group" aria-label="Language buttons">
          <input type="radio" class="btn-check" name="btnradio" id="btnradio-en" (click)="changeLanguage('en')" [checked]="storage.getItem('lang') === 'en'">
          <label class="btn btn-outline-primary-300" for="btnradio-en" tooltip="English" placement="bottom">EN</label>
