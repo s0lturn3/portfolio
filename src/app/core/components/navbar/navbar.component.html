@@ -10,10 +10,12 @@
    </div>
 
    <div id="navbar-language" class="col-3 d-flex flex-row align-items-center justify-content-center gap-3 language">
-      <button class="btn btn-outline-primary-300" aria-label="change-language-btn"
-         data-message="Button to change website language" (click)="changeLanguage()"
-         tooltip="{{ 'switch-language' | translate }}" placement="left">
-         <span class="text-light">{{ 'switch-to-language' | translate }}</span>
-      </button>
+      <div id="navbar-language" class="btn-group language" role="group" aria-label="Language buttons">
+         <input type="radio" class="btn-check" name="btnradio" id="btnradio-en" (click)="changeLanguage('en')" [checked]="storage.getItem('lang') === 'en'">
+         <label class="btn btn-outline-primary-300" for="btnradio-en" tooltip="English" placement="bottom">EN</label>
+
+         <input type="radio" class="btn-check" name="btnradio" id="btnradio-pt" (click)="changeLanguage('pt-br')" [checked]="storage.getItem('lang') === 'pt-br' || !storage.getItem('lang')">
+         <label class="btn btn-outline-primary-300" for="btnradio-pt" tooltip="Português (Brasil)" placement="bottom">PT</label>
+      </div>
    </div>
 </nav>

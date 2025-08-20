@@ -30,6 +30,8 @@ export class NavbarComponent {
   faGithub = faGithub;
   faUpwork = faUpwork;
   faGlobe = faGlobe;
+
+  public storage: Storage = localStorage;
   // #endregion PUBLIC
 
   // #endregion ==========> PROPERTIES <==========
@@ -45,9 +47,9 @@ export class NavbarComponent {
 
 
   // #region ==========> UTILS <==========
-  changeLanguage(): void {
-    if (localStorage.getItem('lang') === 'pt-br') this._translateService.use('en');
-    else this._translateService.use('pt-br');
+  changeLanguage(lang: string): void {
+    this._translateService.use(lang);
+    localStorage.setItem('lang', lang);
   }
   // #endregion ==========> UTILS <==========
 
