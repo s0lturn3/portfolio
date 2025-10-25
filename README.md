@@ -37,7 +37,7 @@ O projeto é dividido entre **frontend** e **backend**:
 
 ## 🖼️ Preview
 
-![Screenshot do portfólio](preview.png)
+<img width="100%" alt="preview" src="preview.png" />
 
 ---
 
