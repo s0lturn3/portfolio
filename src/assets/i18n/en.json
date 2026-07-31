@@ -19,10 +19,10 @@
    "home-subtitle": "Developer",
 
    "about-title": "About Me",
-   "about-subtitle": "+3 YEARS OF EXPERIENCE IN FULLSTACK DEVELOPMENT",
-   "about-1-p": "I’m a developer passionate about creating efficient, scalable solutions with <span class='text-primary-300'>Angular, Node.js, and C#</span>. I specialize in building web apps with interactive interfaces and microservices, making sure everything is optimized for performance.",
-   "about-2-p": "Currently, I work full-time as a fullstack developer, but I’m always open to freelance opportunities. I’ve got experience with testing, maintaining npm libraries, and working with databases, and I’m always aiming to improve the quality and usability of the apps I build.",
-   "about-3-p": "Throughout my career, I’ve contributed to projects that prioritize clean, maintainable code, while striving to create software that is both technically sound and user-centric.",
+   "about-subtitle": "+4 YEARS OF EXPERIENCE IN FULLSTACK DEVELOPMENT",
+   "about-1-p": "Full-stack developer with 4+ years of experience building web applications and ERP systems, primarily with <span class='text-primary-300'>Angular, .NET and Node.js</span>. My work has focused on modernizing internal tooling — from documentation systems to build and deployment pipelines.",
+   "about-2-p": "I led the design and implementation of our build and deploy automation using Azure DevOps, cutting the release cycle for our core Infrastructure-as-Code projects from a full day to roughly 2 hours. This involved auditing our existing infrastructure, redesigning deployment strategies across our servers, and working closely with the team to ensure every system could integrate reliably into the new pipeline.",
+   "about-3-p": "I communicate fluently in Portuguese and English, both in-person and remote, and I'm always looking for the next problem worth solving.",
 
    "curriculum-btn": "RESUME",
 

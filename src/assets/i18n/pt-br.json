@@ -19,10 +19,10 @@
    "home-subtitle": "Desenvolvedor ",
    
    "about-title": "Sobre Mim",
-   "about-subtitle": "+3 ANOS DE EXPERIÊNCIA COM DESENVOLVIMENTO FULLSTACK",
-   "about-1-p": "Sou desenvolvedor apaixonado por criar soluções eficientes e escaláveis com <span class='text-primary-300'>Angular, Node.js e C#</span>. Trabalho com aplicações web interativas e microsserviços, sempre buscando otimizar o desempenho de tudo.",
-   "about-2-p": "Atualmente, sou desenvolvedor fullstack em tempo integral, mas estou totalmente aberto para oportunidades de freelance. Tenho experiência com testes, manutenção de bibliotecas npm e bancos de dados, e estou sempre em busca de melhorar a qualidade e usabilidade das aplicações que crio.",
-   "about-3-p": "Ao longo da minha carreira, contribuí para projetos que priorizam um código limpo e manutenível, sempre buscando criar softwares que sejam tecnicamente sólidos e centrados no usuário.",
+   "about-subtitle": "+4 ANOS DE EXPERIÊNCIA COM DESENVOLVIMENTO FULLSTACK",
+   "about-1-p": "Desenvolvedor Full Stack com mais de 4 anos de experiência no desenvolvimento de aplicações web e sistemas ERP, atuando principalmente com <span class='text-primary-300'>Angular, .NET e Node.js</span>. Minha experiência é voltada à modernização de ferramentas internas, desde sistemas de documentação até pipelines de build e deploy.",
+   "about-2-p": "Liderei o desenho e a implementação da automação de build e deploy utilizando Azure DevOps, reduzindo o ciclo de entrega dos nossos principais projetos de Infraestrutura como Código (Infrastructure as Code - IaC) de um dia inteiro para aproximadamente 2 horas. Esse trabalho envolveu a análise da infraestrutura existente, o redesenho das estratégias de implantação entre nossos servidores e uma colaboração próxima com a equipe para garantir que todos os sistemas fossem integrados de forma confiável ao novo pipeline.",
+   "about-3-p": "Tenho fluência em português e inglês, tanto para comunicação presencial quanto remota, e estou sempre em busca de desafios que me permitam criar soluções eficientes e gerar impacto real.",
 
    "curriculum-btn": "CURRÍCULO",
 
